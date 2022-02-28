@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#EDCACA"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_blue"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:minWidth="200dp"
+        android:text="Connect Blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_sendTXT"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:minWidth="200dp"
+        android:text="Send Image"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_blue"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_View1"
+        android:layout_width="147dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="6dp"
+        android:background="#7BCF4D"
+        android:gravity="center"
+        android:text="Signal Status:"
+        android:textColor="#0D27D1"
+        android:textSize="19dp"
+        app:layout_constraintStart_toEndOf="@+id/btn_blue"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_status"
+        android:layout_width="147dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text=" No.1 ... "
+        android:textColor="#0D27D1"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/btn_sendTXT"
+        app:layout_constraintTop_toBottomOf="@+id/txt_View1"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_View2"
+        android:layout_width="119dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/vien"
+        android:gravity="center"
+        android:text="Set up"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sendTXT"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txt_View3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Color:"
+        android:textColor="#B5140E"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_View2"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="320dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:background="#a6dfdfdf"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_View3"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btn_BLUE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:backgroundTint="#5592ED"
+            android:text="BLUE"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btn_GREEN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:backgroundTint="#269C2C"
+            android:text="GREEN"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btn_RED"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#EA2D2D"
+            android:text="RED"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btn_VIOLET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#C86EF8"
+            android:text="VIOLET"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_View4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:text="Brightness:"
+        android:textColor="#B5140E"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
